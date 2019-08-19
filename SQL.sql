@@ -1,0 +1,36 @@
+
+CREATE DATABASE gyarari;
+use gyarari;
+
+CREATE TABLE usuarios(
+    id INT PRIMARY KEY,
+    usuario VARCHAR(50) NOT NULL,
+    pass VARCHAR(200) NOT NULL,
+    nombre VARCHAR(30) NOT NULL,
+    avatar VARCHAR(200) NOT NULL,
+    banner VARCHAR(200) NOT NULL,
+    presentacion VARCHAR(300)
+);
+
+CREATE TABLE imagenes(
+	idImg INT AUTO_INCREMENT PRIMARY KEY,
+    idUser INT NOT NULL,
+    nameUser VARCHAR(100) NOT NULL,
+    avatarUser VARCHAR(200) NOT NULL,
+    bannerUser VARCHAR(200) NOT NULL,
+    img VARCHAR(200) NOT NULL,
+    nameImg VARCHAR(100) NOT NULL,
+    txtImg TEXT NOT NULL,
+    fechaImg TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+ALTER TABLE imagenes ADD CONSTRAINT fk_UsuIma FOREIGN KEY (idUser) REFERENCES usuarios (id) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+
+
+
+
+
+

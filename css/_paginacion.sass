@@ -1,0 +1,33 @@
+// ----- Paginacion -----
+
+.paginacion
+    margin-top: 50px
+    margin-bottom: 50px
+    ul
+        list-style: none
+        text-align: center
+        text-decoration: none
+        li
+            display: inline-block
+            margin: 0 5px
+            color: #fff
+            a
+                display: block
+                padding: 10px 40px
+                background: #282248
+                color: #fff
+                text-decoration: none
+                border-radius: 10px
+                &:hover
+                    background: #9B73E0
+        .active
+            background: #9200FB
+            padding: 10px 40px
+            border-radius: 10px
+        .disabled
+            background: #a8a8a8
+            padding: 10px 40px
+            cursor: not-allowed
+            border-radius: 10px
+            &:hover
+                background: #a8a8a8

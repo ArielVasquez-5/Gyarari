@@ -1,0 +1,147 @@
+header
+    background: #282248
+    height: 110px
+    width: 100%
+    position: fixed
+    top: 0
+    z-index: 1
+    .contenedorHeader
+        max-width: 1200px
+        margin: auto
+        .menu
+            width: 100%
+            display: flex
+            flex-wrap: no-wrap
+            flex-direction: row
+            justify-content: space-between
+            .logo
+                width: 300px
+                padding: 10px
+                display: flex
+                flex-wrap: no-wrap
+                text-decoration: none
+                .imagen
+                    width: 25%  
+                    img
+                        width: 100%
+                        vertical-align: top
+                        display: inline-block
+                .logoTittle
+                    display: inline-block
+                    width: 75%
+                    color: #fff
+                    padding: 10px
+                    text-align: center
+                    margin-top: 5px
+                    h2
+                        width: 100%
+                        text-align: center
+                        font-size: 2.4em
+                    h3
+                        width: 100%
+                        letter-spacing: 5px
+                        font-size: 0.7em
+                        text-align: center
+            .browser
+                width: 400px
+                position: relative
+                input[type="text"]
+                    width: 100%
+                    outline: none
+                    background: #18142F
+                    border: none
+                    display: block
+                    margin: auto
+                    margin-top: 35px
+                    padding: 10px
+                    color: #fff
+                    border-radius: 12px
+                    border: 1px solid rgba(255,255,255,.3)
+                    transition: all .3s ease
+                    &:focus
+                        border: 4px solid #4E6187
+                        margin-top: 32px
+                i
+                    position: absolute
+                    color: rgba(255,255,255,.3)
+                    padding: 5px
+                    right: 10px
+                    top: 41px             
+            .enlaces
+                width: 300px
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
+                justify-content: space-around
+                list-style: none
+                li
+                    list-style: none
+                    text-decoration: none
+                a
+                    width: 50%
+                    display: inline-block
+                    text-decoration: none               
+                    color: #C6C2DD
+                    padding: 10px
+                    text-align: center
+                    margin-top: 35px
+                    transition: all .2s ease
+                    &:hover
+                        cursor: pointer
+                        color: #41A6FF
+                .iconUser
+                    list-style: none
+                    width: 50%
+                    position: relative
+                    ul
+                        li                         
+                            .iconUser2
+                                width: 100%
+                                height: 100%
+                                padding-bottom: 30px
+                                transition: all .3s ease 
+                                font-size: 1em
+                                a
+                                    width: 60%
+                                    display: inline-block
+                                img
+                                    width: 30%
+                                    border-radius: 50%
+                                    vertical-align: top
+                                    display: inline-block
+                                    margin-top: 35px
+                                    border: 2px solid #C6C2DD
+                                    transition: all .2s ease
+                            .subMenu
+                                display: absolute
+                                display: none
+                                width: 100%
+                                border-radius: 10px  
+                                transition: all .2s ease                             
+                                li
+                                    color: #fff
+                                    list-style: none
+                                    .subOp
+                                        margin-top: 0
+                                        background: #282248
+                                        width: 100%
+                                        padding: 20px
+                                        border-radius: 15px
+                                        transition: all .2s ease   
+                                        //color: #fff
+                                        //padding: 5px
+                                &:hover
+                                    display: block                                   
+                            &:hover
+                                cursor: pointer
+                                a
+                                    color: #41A6FF
+                                img
+                                    border: 2px solid #41A6FF
+                                .subMenu
+                                    display: block
+
+
+ul
+    list-style: none
+    text-decoration: none

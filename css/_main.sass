@@ -1,0 +1,155 @@
+// ----- Estilos del Main -----
+
+.main
+    opacity: 0
+    transition: opacity 0.5s linear 0.7s 
+    .cargadas
+        opacity: 1   
+    .contenedorIndex
+        width: 90%
+        max-width: 900px
+        margin: auto
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-around 
+        .thumbContenedor
+            //position: relative
+            width: 60%
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-around
+            .thumb
+                width: 100%
+                padding: 10px
+                //background: #18142F
+                background: rgba(#282248,.3)
+                //background: #282248
+                border-radius: 5px
+                margin-bottom: 20px
+                //box-shadow: 2px 1px 5px rgba(#000,.4)
+                border: 1px solid rgba(#fff,.1)
+                position: relative
+                .thumbUser
+                    width: 100%
+                    height: 70px
+                    display: flex
+                    flex-wrap: wrap
+                    flex-direction: row
+                    border-radius: 50px
+                    background: #282248
+                    img
+                        width: 50px
+                        height: 50px
+                        border-radius: 50%
+                        vertical-align: top
+                        margin: 10px 0 0 10px
+                    .tituloUser
+                        text-decoration: none
+                        display: inline-block
+                        color: #ccc
+                        font-size: 1.3em
+                        text-align: center
+                        margin-top: 23px
+                        margin-left: 10px
+                        transition: all .2s ease
+                        &:hover
+                            color: #41A6FF
+                .thumbHover
+                    width: 100%
+                    position: relative
+                    padding: 10px
+                    opacity: 1
+                    transition: all .2s ease
+                    &:hover
+                        cursor: pointer
+                        .thumbImg
+                            opacity: 0.2                            
+                        .iconLikeAndComment
+                            display: block
+                            opacity: 1
+                    .thumbImg
+                        transition: all .2s ease
+                        width: 100%                     
+                        vertical-align: top                     
+                    .iconLikeAndComment
+                        transition: all .2s ease
+                        position: absolute
+                        color: #fff
+                        padding: 5px
+                        //right: 140px
+                        //top: 160px
+                        font-size: 20px
+                        display: flex
+                        flex-direction: row
+                        flex-wrap: wrap
+                        justify-content: space-between
+                        display: none
+                        right: 41%
+                        top: 41%
+                        //margin-left: auto
+                        //margin-right: auto
+                        //top: 0
+                        //right: 0
+                        .likeAndComment
+                            display: inline-block
+                            padding: 10px
+                .thumbText
+                    text-align: center
+                    color: rgba(#fff,.8)
+                    padding: 10px   
+                    .thumbP
+                        color: rgba(#fff,.6)
+                        padding: 10px
+                        margin-top: 10px
+                    
+.perfilesContenedor
+    width: 30%
+    background: #1F1A3A
+    padding: 20px
+    border-radius: 20px
+    height: 100%
+    //box-shadow: 2px 1px 1px rgba(#000,.4)
+    border: 1px solid rgba(#fff,.1)
+    .tittlePerfil
+        width: 100%
+        padding: 10px
+        margin-bottom: 20px
+        .h3Perfil
+            width: 100%
+            color: #41A6FF
+            font-size: 1em
+            text-align: center
+    .perfil
+        margin-bottom: 10px
+        width: 100%
+        .thumbUser
+            width: 100%
+            height: 50px
+            display: flex
+            flex-wrap: wrap
+            flex-direction: row
+            border-radius: 50px
+            background: #282248
+            img
+                width: 40px
+                height: 40px
+                border-radius: 50%
+                vertical-align: top
+                margin: 5px 0px 0px 10px
+            .tituloUser
+                text-decoration: none
+                display: inline-block
+                color: #ccc
+                font-size: 0.9em
+                text-align: center
+                margin-top: 18px
+                margin-left: 10px
+                transition: all .2s ease
+                &:hover
+                    color: #41A6FF
+    
+
+// load JS
+
