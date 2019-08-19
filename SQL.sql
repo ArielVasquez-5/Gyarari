@@ -4,23 +4,23 @@ use gyarari;
 
 CREATE TABLE usuarios(
     id INT PRIMARY KEY,
-    usuario VARCHAR(50) NOT NULL,
-    pass VARCHAR(200) NOT NULL,
-    nombre VARCHAR(30) NOT NULL,
-    avatar VARCHAR(200) NOT NULL,
-    banner VARCHAR(200) NOT NULL,
+    usuario VARCHAR(50),
+    pass VARCHAR(200),
+    nombre VARCHAR(30),
+    avatar VARCHAR(200),
+    banner VARCHAR(200),
     presentacion VARCHAR(300)
 );
 
 CREATE TABLE imagenes(
 	idImg INT AUTO_INCREMENT PRIMARY KEY,
     idUser INT NOT NULL,
-    nameUser VARCHAR(100) NOT NULL,
-    avatarUser VARCHAR(200) NOT NULL,
-    bannerUser VARCHAR(200) NOT NULL,
-    img VARCHAR(200) NOT NULL,
-    nameImg VARCHAR(100) NOT NULL,
-    txtImg TEXT NOT NULL,
+    nameUser VARCHAR(100),
+    avatarUser VARCHAR(200),
+    bannerUser VARCHAR(200),
+    img VARCHAR(200),
+    nameImg VARCHAR(100),
+    txtImg TEXT,
     fechaImg TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
