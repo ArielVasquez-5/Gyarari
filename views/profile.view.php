@@ -39,7 +39,7 @@
             <?php foreach($posts AS $post): ?>
                 <div class="thumbHover">
                     <a href="<?php echo RUTA . 'single.php?idImg=' . $post['idImg']; ?>"><img class="thumbImg" src="img/<?php echo $post['img']; ?>" alt=""></a>
-                    
+                    <!-- COMENTARIOS Y LIKE
                     <div class="iconLikeAndComment">
                         <div class="likeAndComment">
                             <i class="fas fa-heart iconIzquierda"></i><p>0</p>
@@ -48,6 +48,7 @@
                             <i class="fas fa-comment iconDerecha"></i><p>0</p>
                         </div>
                     </div>
+                    -->
                 </div> 
             <?php endforeach; ?>
 

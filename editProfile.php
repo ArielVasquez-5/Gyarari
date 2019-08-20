@@ -111,7 +111,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 require 'views/header.php';
 require 'views/editProfile.view.php'; 
 
-require 'views/footer.php'; 
+//require 'views/footer.php'; 
 
 
 

@@ -58,7 +58,10 @@
             
             <div class="perfilesContenedor">
                 <div class="tittlePerfil">
-                    <h3 class="h3Perfil">Entra y conoce su contenido</h3>                    
+                    <h3 class="h3Perfil">Entra y conoce su contenido</h3>´
+                    <?php if(!$_SESSION): ?>
+                    <p class="error">Debes iniciar Sesion para ver este contenido!</p>
+                    <?php endif; ?>                    
                 </div>
                 <?php foreach($usuarios AS $usuario): ?>
                 <div class="perfil">

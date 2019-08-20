@@ -50,6 +50,7 @@ header {
 header .contenedorHeader {
   max-width: 1200px;
   margin: auto;
+  width: 100%;
 }
 header .contenedorHeader .menu {
   width: 100%;
@@ -581,7 +582,6 @@ footer .contenedor .copyright {
 }
 .contenedorProfile .imgProfile .tittleProfile {
   margin-left: 30px;
-  width: 300px;
 }
 .contenedorProfile .imgProfile .tittleProfile .titulo2 {
   width: 100%;
@@ -881,6 +881,241 @@ footer .contenedor .copyright {
 
 .aError {
   color: #41A6FF;
+}
+
+.headerResponsive {
+  display: none;
+}
+.headerResponsive #btn-menu {
+  display: none;
+}
+.headerResponsive label {
+  display: block;
+  width: 65px;
+  height: 65px;
+  padding: 10px;
+  border-right: 1px solid #fff;
+}
+.headerResponsive label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+.headerResponsive label i {
+  font-size: 50px;
+  color: #fff;
+}
+.headerResponsive .menuResponsive {
+  margin-left: -70%;
+  transition: all 0.5s;
+}
+.headerResponsive .menuResponsive li {
+  border-top: 1px solid #fff;
+  width: 150px;
+  background: #282248;
+}
+.headerResponsive .menuResponsive ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.headerResponsive .menuResponsive ul a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 20px;
+}
+.headerResponsive .menuResponsive ul a:hover {
+  color: #41A6FF;
+}
+
+@media screen and (max-width: 900px) {
+  .main .contenedorIndex .thumbContenedor {
+    width: 100%;
+  }
+  .main .contenedorIndex .perfilesContenedor {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main .contenedorIndex .perfilesContenedor .perfil {
+    width: 33.33333%;
+  }
+
+  .contenedorProfile .banner img {
+    height: 400px;
+  }
+  .contenedorProfile .imgProfile {
+    width: 80%;
+    right: 60px;
+  }
+  .contenedorProfile .mainProfile .thumbFlex .thumbHover {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 560px) {
+  header {
+    height: 65px;
+  }
+
+  .contenedorHeader {
+    display: none;
+  }
+
+  .headerResponsive {
+    display: block;
+  }
+  .headerResponsive #btn-menu:checked ~ .menuResponsive {
+    margin: 0;
+  }
+
+  .main .contenedorIndex .thumbContenedor {
+    width: 100%;
+  }
+  .main .contenedorIndex .perfilesContenedor {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main .contenedorIndex .perfilesContenedor .perfil {
+    width: 45%;
+  }
+
+  .contenedorProfile .banner img {
+    height: 300px;
+  }
+  .contenedorProfile .imgProfile {
+    top: 300px;
+    width: 60%;
+  }
+  .contenedorProfile .imgProfile .tittleProfile .titulo2 {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .contenedorProfile .mainProfile {
+    margin-top: 120px;
+  }
+  .contenedorProfile .mainProfile .thumbFlex .thumbHover {
+    width: 90%;
+  }
+}
+.headerResponsive {
+  display: none;
+}
+.headerResponsive #btn-menu {
+  display: none;
+}
+.headerResponsive label {
+  display: block;
+  width: 65px;
+  height: 65px;
+  padding: 10px;
+  border-right: 1px solid #fff;
+}
+.headerResponsive label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+.headerResponsive label i {
+  font-size: 50px;
+  color: #fff;
+}
+.headerResponsive .menuResponsive {
+  margin-left: -70%;
+  transition: all 0.5s;
+}
+.headerResponsive .menuResponsive li {
+  border-top: 1px solid #fff;
+  width: 150px;
+  background: #282248;
+}
+.headerResponsive .menuResponsive ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.headerResponsive .menuResponsive ul a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 20px;
+}
+.headerResponsive .menuResponsive ul a:hover {
+  color: #41A6FF;
+}
+
+@media screen and (max-width: 900px) {
+  .main .contenedorIndex .thumbContenedor {
+    width: 100%;
+  }
+  .main .contenedorIndex .perfilesContenedor {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main .contenedorIndex .perfilesContenedor .perfil {
+    width: 33.33333%;
+  }
+
+  .contenedorProfile .banner img {
+    height: 400px;
+  }
+  .contenedorProfile .imgProfile {
+    width: 80%;
+    right: 60px;
+  }
+  .contenedorProfile .mainProfile .thumbFlex .thumbHover {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 560px) {
+  header {
+    height: 65px;
+  }
+
+  .contenedorHeader {
+    display: none;
+  }
+
+  .headerResponsive {
+    display: block;
+  }
+  .headerResponsive #btn-menu:checked ~ .menuResponsive {
+    margin: 0;
+  }
+
+  .main .contenedorIndex .thumbContenedor {
+    width: 100%;
+  }
+  .main .contenedorIndex .perfilesContenedor {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main .contenedorIndex .perfilesContenedor .perfil {
+    width: 45%;
+  }
+
+  .contenedorProfile .banner img {
+    height: 300px;
+  }
+  .contenedorProfile .imgProfile {
+    top: 300px;
+    width: 60%;
+  }
+  .contenedorProfile .imgProfile .tittleProfile .titulo2 {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .contenedorProfile .mainProfile {
+    margin-top: 120px;
+  }
+  .contenedorProfile .mainProfile .thumbFlex .thumbHover {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

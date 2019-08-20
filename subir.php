@@ -70,6 +70,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_FILES)) {
 require 'views/header.php';
 require 'views/subir.view.php';
 
-require 'views/footer.php';
+//require 'views/footer.php';
 
 ?>

@@ -12,7 +12,7 @@
     <title>Gyarari</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="contenedorHeader">
             <nav class="menu">
                 <a href="<?php echo RUTA; ?>" class="logo">
@@ -24,10 +24,12 @@
                         <h3>GALERIA ONLINE</h3>
                     </div>
                 </a>
+                <!--
                 <div class="browser">
                     <input type="text" placeholder="Buscar...">
                     <i class="fas fa-search"></i>
                 </div>
+                -->
                 <div class="enlaces">
                     <?php if(isset($_SESSION['usuario'])): ?>
                     <a href="<?php echo RUTA . 'index.php'; ?>">Inicio</a>
@@ -46,7 +48,7 @@
                                 <ul class="subMenu">
                                     <li><a class="subOp" href="<?php echo RUTA . 'profile.php?id=' . $datosUsuario[0]['id']; ?>">Ver Perfil</a></li>
                                     <li><a class="subOp" href="<?php echo RUTA .'editProfile.php?id=' . $datosUsuario[0]['id']; ?>">Editar Perfil</a></li>
-                                    <li><a class="subOp" href="#">Tema: Dia</a></li>
+                                    <!--<li><a class="subOp" href="#">Tema: Dia</a></li>-->
                                     <li><a class="subOp" href="<?php echo RUTA . 'desconectar.php'; ?>">Cerrar Sesion</a></li>
                                 </ul>
                             </li>
@@ -58,6 +60,32 @@
                     <?php endif; ?>
                 </div>
             </nav>
-        </div>  
+        </div> 
+
+
+        
+<!-- HEADER RESPONSIRVE -->
+
+        <div class="headerResponsive">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"><i class="fas fa-bars"></i></label>
+            <nav class="menuResponsive">
+                <ul>
+                <?php if(isset($_SESSION['usuario'])): ?>
+                    <li><a href="<?php echo RUTA . 'index.php'; ?>">Inicio</a></li>
+                    <li><a href="<?php echo RUTA . 'profile.php?id=' . $datosUsuario[0]['id']; ?>">Ver Perfil</a></li>
+                    <li><a href="<?php echo RUTA . 'editProfile.php?id=' . $datosUsuario[0]['id']; ?>">Editar Perfil</a></li>
+                    <li><a href="<?php echo RUTA . 'desconectar.php'; ?>">Cerrar Sesion</a></li>
+                <?php else: ?>
+                    <li><a href="<?php echo RUTA . 'index.php'; ?>">Inicio</a></li>
+                    <li><a href="<?php echo RUTA . 'login.php'; ?>">Iniciar Sesion</a></li>
+                <?php endif; ?>
+                </ul>
+            </nav>
+        </div> 
+
     </header> 
+
+
+    
 
