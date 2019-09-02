@@ -254,40 +254,6 @@ function fecha($fecha){
 
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////// FUNCIONES SIN UTILIZAR ////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-// ===================================================================================================== //
-// Una de las cosas que queria agregar al sitio eran comentarios, en un principio mi idea era
-// que existiera un apartado entre las imagenes y el footer del index, donde se pudiera dejar 
-// comentarios como si fuese un foro, y se mostrarian todos los comentarios de todos los usuarios
-// el problema es que iba a estar muy desordenado asi que en ultima instancia decidi mejor quitarlo
-// Esta funcion iba a servir para eso, de todas formas la dejo aca por si en el futuro tengo 
-// planeado usar estos comentarios de otra forma, como agregar comentarios a las fotos por ej
-// ===================================================================================================== //
-
-function obtener_comentarios($post_por_pagina, $usuario, $conexion) {
-    $sentencia = $conexion->prepare("SELECT * FROM comentarios ORDER BY idCom DESC");
-    $sentencia->execute(array(
-        ':idUser' => $usuario
-    ));
-    return $sentencia->fetchAll();
-}
-
-// ===================================================================================================== //
-// Comprueba solo si existe una session, de ser asi devuelve esa sesion
-// ===================================================================================================== //
-
-function obtener_id_db($conexion){
-    $statement = $conexion->prepare('SELECT id FROM usuarios');
-    $statement->execute();
-    $idsDb = $statement->fetchAll();
-   
-    return $idsDb;   
-}
 
 
 
