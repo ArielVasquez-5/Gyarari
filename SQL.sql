@@ -4,9 +4,9 @@ use gyarari;
 
 CREATE TABLE usuarios(
     id INT PRIMARY KEY,
-    usuario VARCHAR(50),
-    pass VARCHAR(200),
-    nombre VARCHAR(30),
+    usuario VARCHAR(50) NOT NULL,
+    pass VARCHAR(200) NOT NULL,
+    nombre VARCHAR(30) NOT NULL,
     avatar VARCHAR(200),
     banner VARCHAR(200),
     presentacion VARCHAR(300)
